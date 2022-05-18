@@ -160,6 +160,29 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script type="module">
+  				// Import the functions you need from the SDKs you need
+  				import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.1/firebase-app.js";
+  				import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.8.1/firebase-analytics.js";
+  				// TODO: Add SDKs for Firebase products that you want to use
+  				// https://firebase.google.com/docs/web/setup#available-libraries
+
+  				// Your web app's Firebase configuration
+  				// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  				const firebaseConfig = {
+  					apiKey: "AIzaSyDHujojnQXF8034ycSDPkWdrMsnAeDox7g",
+					authDomain: "menace-client.firebaseapp.com",
+					projectId: "menace-client",
+					storageBucket: "menace-client.appspot.com",
+     					messagingSenderId: "923225012934",
+    					appId: "1:923225012934:web:6702d68f7893df881b35c7",
+    					measurementId: "G-XM108N4K86"
+  				};
+
+  				// Initialize Firebase
+  				const app = initializeApp(firebaseConfig);
+  				const analytics = getAnalytics(app);
+			</script>
 
 	</body>
 </html>
