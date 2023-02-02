@@ -1,9 +1,4 @@
-/**
- * @license
- * Copyright 2017 Google LLC
- * SPDX-License-Identifier: Apache-2.0
- */
- (function() {
+(function() {
 
   const toolbox = {
     'kind': 'flyoutToolbox',
@@ -45,6 +40,7 @@
     scrollbars: false
   });
 
+  /*
   var blocklyArea = document.getElementById('blocklyArea');
   var blocklyDiv = document.getElementById('blocklyDiv');
 
@@ -68,6 +64,6 @@
     console.log('resize');
   };
   window.addEventListener('resize', onresize, false);
-  onresize();
+  onresize();*/
 
 })();
