@@ -7,14 +7,6 @@ body {
   font-family: sans-serif;
   overflow: hidden;
 }
-.blocklyDiv {
-  position: absolute;
-  top: 50%;
-  left: 1%;
-  right: 1%;
-  height: 480px;
-   width: 600px;
-}
 h1 {
   font-weight: normal;
   font-size: 140%;
