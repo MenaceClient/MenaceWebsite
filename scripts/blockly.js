@@ -35,7 +35,7 @@
     ]
   }
 
-  Blockly.inject('blocklyDiv', {
+  const workspace = Blockly.inject('blocklyDiv', {
     toolbox: toolbox,
     scrollbars: false
   });
