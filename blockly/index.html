@@ -2,19 +2,28 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Menace Scripting</title>
 
-  <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.indigo-pink.min.css">
   <link rel="stylesheet" href="../styles/blockly.css">
 </head>
-
 <body>
-  <div id="blocklyArea">
-    Blockly go here
-  </div>
+  <table>
+    <tr>
+      <td>
+        <p>The first step in creating a resizable Blockly workspace is to use
+        CSS or tables to create an area for it.
+        Next, <a href="overlay.html">inject Blockly</a> over that area.</p>
+
+        <p>&rarr; More info on <a href="https://developers.google.com/blockly/guides/configure/web/resizable">injecting resizable Blockly</a>&hellip;</p>
+      </td>
+    </tr>
+    <tr>
+      <td id="blocklyArea">
+        Blockly will be positioned here.
+      </td>
+    </tr>
+  </table>
 
   <div id="blocklyDiv" style="position: absolute"></div>
 
