@@ -40,7 +40,7 @@
     scrollbars: false
   });
 
-  
+  /*
   var blocklyArea = document.getElementById('blocklyArea');
   var blocklyDiv = document.getElementById('blocklyDiv');
 
@@ -64,6 +64,6 @@
     console.log('resize');
   };
   window.addEventListener('resize', onresize, false);
-  onresize();
+  onresize();*/
 
 })();
