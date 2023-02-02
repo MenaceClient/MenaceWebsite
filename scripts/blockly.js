@@ -1,5 +1,7 @@
 (function() {
 
+  import {javascriptGenerator} from 'blockly/javascript';
+
   const toolbox = {
     'kind': 'categoryToolbox',
     "contents": [
@@ -49,7 +51,7 @@
             "type": "text"
           },
           {
-            "kind": "category",
+            "kind": "block",
             "name": "Variables",
             "custom": "VARIABLE"
           },
