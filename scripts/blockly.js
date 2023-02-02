@@ -37,7 +37,8 @@
 
   const workspace = Blockly.inject('blocklyDiv', {
     toolbox: toolbox,
-    scrollbars: false
+    scrollbars: false,
+    renderer: "zelos"
   });
 
   /*
