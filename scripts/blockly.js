@@ -49,8 +49,9 @@
             "type": "text"
           },
           {
-            "kind": "block",
-            "type": "text_print"
+            "kind": "category",
+            "name": "Variables",
+            "custom": "VARIABLE"
           },
         ]
       }
