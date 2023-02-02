@@ -7,7 +7,15 @@ body {
   font-family: sans-serif;
   overflow: hidden;
 }
+
+.blocklyArea {
+  text-align: center;
+  position: absolute;
+  left: 1%;
+  right: 1%;
+}
+
 h1 {
   font-weight: normal;
   font-size: 140%;
-} 
+}
