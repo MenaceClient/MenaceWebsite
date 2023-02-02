@@ -1,6 +1,6 @@
 (function() {
 
-  import {javascriptGenerator} from 'blockly/javascript';
+  //import {javascriptGenerator} from 'blockly/javascript';
 
   const toolbox = {
     'kind': 'categoryToolbox',
