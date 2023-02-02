@@ -1,7 +1,5 @@
 (function() {
 
-  //import {javascriptGenerator} from 'blockly/javascript';
-
   const toolbox = {
     'kind': 'categoryToolbox',
     "contents": [
@@ -59,7 +57,7 @@
     toolbox: toolbox
   });
 
-  //const jsCode = javascriptGenerator.workspaceToCode(workspace);
+  //const jsCode = Blockly.JavaScript.workspaceToCode(workspace);
 
 
 })();
