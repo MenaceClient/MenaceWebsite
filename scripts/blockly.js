@@ -57,7 +57,10 @@
     toolbox: toolbox
   });
 
-  //const jsCode = Blockly.JavaScript.workspaceToCode(workspace);
-
+  function updateCode(event) {
+    const code = Blockly.JavaScript.workspaceToCode(workspace);
+    document.getElementById('codeOut').value = code;
+  }
+  workspace.addChangeListener(updateCode);
 
 })();
