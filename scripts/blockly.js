@@ -41,6 +41,10 @@
         "contents": [
           {
             "kind": "block",
+            "type": "logic_boolean"
+          },
+          {
+            "kind": "block",
             "type": "math_number",
             "fields": {"NUM": 123}
           },
