@@ -15,6 +15,36 @@
             "kind": "block",
             "type": "controls_repeat_ext"
           },
+          {
+            "kind": "block",
+            "type": "controls_for",
+            "inputs": {
+              "FROM": {
+                "block": {
+                  "type": "math_number",
+                  "shadow": {
+                    "NUM": 1
+                  }
+                }
+              },
+              "TO": {
+                "block": {
+                  "type": "math_number",
+                  "shadow": {
+                    "NUM": 10
+                  }
+                }
+              },
+              "BY": {
+                "block": {
+                  "type": "math_number",
+                  "shadow": {
+                    "NUM": 1
+                  }
+                }
+              },
+            }
+          },
         ]
       },
       {
