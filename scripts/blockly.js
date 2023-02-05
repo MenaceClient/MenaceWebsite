@@ -17,24 +17,7 @@
           },
           {
             "kind": "block",
-            "type": "controls_for",
-            /*"inputs": {
-              "FROM": {
-                "shadow": {
-                  "type": "math_number"
-                }
-              },
-              "TO": {
-                "shadow": {
-                  "type": "math_number"
-                }
-              },
-              "BY": {
-                "shadow": {
-                  "type": "math_number"
-                }
-              },
-            }*/
+            "type": "controls_for"
           },
         ]
       },
