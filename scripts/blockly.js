@@ -21,26 +21,17 @@
             "inputs": {
               "FROM": {
                 "shadow": {
-                  "type": "math_number",
-                  "field": {
-                    "NUM": 1
-                  }
+                  "type": "math_number"
                 }
               },
               "TO": {
                 "shadow": {
-                  "type": "math_number",
-                  "field": {
-                    "NUM": 10
-                  }
+                  "type": "math_number"
                 }
               },
               "BY": {
                 "shadow": {
-                  "type": "math_number",
-                  "field": {
-                    "NUM": 1
-                  }
+                  "type": "math_number"
                 }
               },
             }
