@@ -20,25 +20,25 @@
             "type": "controls_for",
             "inputs": {
               "FROM": {
-                "block": {
+                "shadow": {
                   "type": "math_number",
-                  "shadow": {
+                  "field": {
                     "NUM": 1
                   }
                 }
               },
               "TO": {
-                "block": {
+                "shadow": {
                   "type": "math_number",
-                  "shadow": {
+                  "field": {
                     "NUM": 10
                   }
                 }
               },
               "BY": {
-                "block": {
+                "shadow": {
                   "type": "math_number",
-                  "shadow": {
+                  "field": {
                     "NUM": 1
                   }
                 }
