@@ -60,7 +60,7 @@
   function updateCode(event) {
     const code = Blockly.JavaScript.workspaceToCode(workspace);
     document.getElementById('codeOut').value = code;
-    alert(code);
+    //alert(code);
   }
   workspace.addChangeListener(updateCode);
 
