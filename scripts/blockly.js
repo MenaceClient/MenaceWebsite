@@ -18,7 +18,7 @@
           {
             "kind": "block",
             "type": "controls_for",
-            "inputs": {
+            /*"inputs": {
               "FROM": {
                 "shadow": {
                   "type": "math_number"
@@ -34,7 +34,7 @@
                   "type": "math_number"
                 }
               },
-            }
+            }*/
           },
         ]
       },
