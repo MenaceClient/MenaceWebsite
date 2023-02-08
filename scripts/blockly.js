@@ -53,6 +53,16 @@
             "type": "text"
           }
         ]
+      },
+      {
+        "kind": "category",
+        "name": "Events",
+        "contents": [
+          {
+            "kind": "block",
+            "type": "controls_repeat"
+          }
+        ]
       }
     ]
   }
