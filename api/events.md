@@ -30,11 +30,13 @@ description: The list of events you can hook with MenScript.
 
 To use these events call them in the hook function.
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```javascript
 module.hook(EventList.EVENTUPDATE, function (event) {
     //Your code goes here
 });
 ```
+{% endcode %}
 
 ## EventAttack
 
