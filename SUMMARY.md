@@ -1,3 +1,7 @@
 # Table of contents
 
-* [Page 1](README.md)
+* [Menscript - Tutorial](README.md)
+
+## API
+
+* [Events](api/events.md)
