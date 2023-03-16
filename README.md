@@ -6,7 +6,7 @@ First, create a javascript file in the .minecraft/Menace/scripts folder. Then yo
 
 {% code overflow="wrap" lineNumbers="true" %}
 ```javascript
-var scriptmanager = new ScriptManager("ScriptName", "1.0"/*<- version*/, ["Author1", "Author2"]);
+var scriptmanager = new ScriptManager("ScriptName", scriptVersion, ["Author1", "Author2"]);
 var script = scriptmanager.getScript();
 ```
 {% endcode %}
