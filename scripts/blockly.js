@@ -72,7 +72,7 @@
         this.setOutput(false);
         this.setNextStatement(false);
         this.setPreviousStatement(false);
-        this.appendValueInput('String').appendField('On');
+        this.appendValueInput('String').appendField('On').setCheck('String');
         //.appendField(new Blockly.FieldVariable('event'));
         this.appendStatementInput('DO').appendField('do');
       }
