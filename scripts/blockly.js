@@ -72,10 +72,18 @@
         this.setOutput(false);
         this.setNextStatement(false);
         this.setPreviousStatement(false);
-        this.appendValueInput('String').appendField('On')
+        this.appendValueInput('EVENT').appendField('On')
         .appendField(new Blockly.FieldVariable('event'));
-        this.appendStatementInput('DO').appendField('do');
+        this.appendStatementInput('DO').appendField('run');
       }
+  };
+
+  Blockly.JavaScript.javascriptGenerator["event_hook"] = function(block) {
+    var event = block.getFieldValue('EVENT');
+    var func = Blockly.JavaScript.javascriptGenerator.statementToCode(block, "DO");
+    var code = "module.hook(" + event + ", function (event) {\n" + func + "\n});"
+
+    return code;
   };
 
   const workspace = Blockly.inject('blocklyDiv', {
