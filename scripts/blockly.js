@@ -60,12 +60,21 @@
         "contents": [
           {
             "kind": "block",
-            "type": "controls_repeat"
+            "type": "event_onenable"
           }
         ]
       }
     ]
   }
+
+  Blockly.Blocks["event_onenable"] = {
+      init: function() {
+        this.setOutput(false);
+        this.setNextStatement(false);
+        this.setPreviousStatement(false);
+        this.appendStatementInput('DO').appendField('do');
+      }
+  };
 
   const workspace = Blockly.inject('blocklyDiv', {
     toolbox: toolbox
