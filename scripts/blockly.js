@@ -72,7 +72,7 @@
         this.setOutput(false);
         this.setNextStatement(false);
         this.setPreviousStatement(false);
-        this.appendField('OnEnable');
+        this.appendStatementInput('').appendField('OnEnable');
         this.appendStatementInput('DO').appendField('do');
       }
   };
