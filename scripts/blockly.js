@@ -81,7 +81,7 @@
   Blockly.JavaScript.javascriptGenerator["event_hook"] = function(block) {
     //var event = block.getFieldValue('EVENT');
     //var func = Blockly.JavaScript.javascriptGenerator.statementToCode(block, "DO");
-    var code = "module.hook(" /*+ event*/ + ", function (event) {\n" + /*func +*/ "\n});"
+    var code = "module.hook(" /*+ event*/ + ", function (event) {" + /*func +*/ "});"
 
     return code;
   };
