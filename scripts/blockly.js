@@ -60,19 +60,19 @@
         "contents": [
           {
             "kind": "block",
-            "type": "event_onenable"
+            "type": "event_hook"
           }
         ]
       }
     ]
   }
 
-  Blockly.Blocks["event_onenable"] = {
+  Blockly.Blocks["event_hook"] = {
       init: function() {
         this.setOutput(false);
         this.setNextStatement(false);
         this.setPreviousStatement(false);
-        this.appendDummyInput().appendField('OnEnable');
+        this.addValueInput('String').appendField('On');
         this.appendStatementInput('DO').appendField('do');
       }
   };
