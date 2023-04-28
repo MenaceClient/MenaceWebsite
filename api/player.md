@@ -31,3 +31,4 @@ description: Different functions you can call for the player.
 | setRotationPitch | Float                  | Void    | Sets the players rotation pitch             |
 | getHurtTime      | None                   | Integer | Returns the players hurt time               |
 | getHealth        | None                   | Integer | Returns the players health                  |
+| jump             | None                   | Void    | Makes the player jump                       |
