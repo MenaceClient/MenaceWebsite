@@ -19,7 +19,7 @@ description: Different functions you can call for the player.
 | setMotionY       | Double                 | Void    | Sets the players motion Y                   |
 | getMotionZ       | None                   | Double  | Returns the players motion Z                |
 | setMotionZ       | Double                 | Void    | Sets the players motion Z                   |
-| getOnGround      | None                   | Boolean | Returns if the player is on ground          |
+| isOnGround       | None                   | Boolean | Returns if the player is on ground          |
 | setOnGround      | Boolean                | Void    | Sets whether or not the player is on ground |
 | getSprinting     | None                   | Boolean | Returns if the player is sprinting          |
 | setSprinting     | Boolean                | Void    | Sets whether or not the player is sprinting |
