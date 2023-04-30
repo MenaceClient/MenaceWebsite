@@ -20,7 +20,7 @@ description: The list of events you can hook with MenScript.
 * EVENTMOVE
 * EVENTPOSTMOTION
 * EVENTPREMOTION
-* EVENTRECIEVEPACKET
+* EVENTRECEIVEPACKET
 * EVENTSENDPACKET
 * EVENTSLOWDOWN
 * EVENTSTEP
@@ -125,7 +125,7 @@ Anything changed in EventPreMotion happens **sliently** you will not be able to 
 | isOnGround()  | None       | Boolean | Returns is the player is on the ground |
 | setOnGround() | Boolean    | Void    | Sets if the player is on ground.       |
 
-## EventRecievePacket
+## EventReceivePacket
 
 | Method      | Parameters | Type   | Description                            |
 | ----------- | ---------- | ------ | -------------------------------------- |
