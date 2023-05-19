@@ -79,8 +79,9 @@
 
   Blockly.JavaScript["event_hook"] = function(block) {
     var event = block.getFieldValue('EVENT');
+    var eventCode = Blockly.JavaScript.valueToCode(block, "EVENT")
     var func = Blockly.JavaScript.statementToCode(block, "DO");
-    var code = "module.hook(" + event + ", function (event) {\n" + func + "\n});"
+    var code = "module.hook(" + eventCode + ", function (event) {\n" + func + "\n});"
 
     return code;
   };
