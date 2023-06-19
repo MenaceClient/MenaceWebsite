@@ -61,6 +61,10 @@
           {
             "kind": "block",
             "type": "event_hook"
+          },
+          {
+            "kind": "block",
+            "type": "event_list"
           }
         ]
       }
@@ -77,11 +81,48 @@
       }
   };
 
+  Blockly.Blocks["event_list"] = {
+      init: function() {
+        this.setOutput(true);
+        this.setNextStatement(false);
+        this.setPreviousStatement(false);
+        this.appendDummyInput().appendField("Event").appendField(new Blockly.FieldDropdown([
+          ['Enable', 'EventList.ONENABLE'],
+          ['Disable', 'EventList.ONDISABLE'],
+          ['Attack', 'EventList.EVENTATTACK'],
+          ['Render2D', 'EventList.EVENTRENDER2D'],
+          ['Render3D', 'EventList.EVENTRENDER3D'],
+          ['ChatOutput', 'EventList.EVENTCHATOUTPUT'],
+          ['Collide', 'EventList.EVENTCOLLIDE'],
+          ['Death', 'EventList.EVENTDEATH'],
+          ['Jump', 'EventList.EVENTJUMP'],
+          ['KeyPress', 'EventList.EVENTKEYPRESS'],
+          ['Mouse', 'EventList.EVENTMOUSE'],
+          ['Move', 'EventList.EVENTMOVE'],
+          ['PostMotion', 'EventList.EVENTPOSTMOTION'],
+          ['PreMotion', 'EventList.EVENTPREMOTION'],
+          ['RecievePacket', 'EventList.EVENTRECIEVEPACKET'],
+          ['SendPacket', 'EventList.EVENTSENDPACKET'],
+          ['Slowdown', 'EventList.EVENTSLOWDOWN'],
+          ['Step', 'EventList.EVENTSTEP'],
+          ['Teleport', 'EventList.EVENTTELEPORT'],
+          ['Update', 'EventList.EVENTUPDATE'],
+          ['WorldChange', 'EventList.EVENTWORLDCHANGE']
+      ]), 'EVENTNAME');
+      }
+  }
+
   Blockly.JavaScript["event_hook"] = function(block) {
-    var event = block.getFieldValue('EVENT');
-    var eventCode = Blockly.JavaScript.valueToCode(block, "EVENT")
-    var func = Blockly.JavaScript.statementToCode(block, "DO");
-    var code = "module.hook(" + eventCode + ", function (event) {\n" + func + "\n});"
+    eventCode = Blockly.JavaScript.statementToCode(block, 'EVENT', Blockly.JavaScript.ORDER_ATOMIC);
+    func = Blockly.JavaScript.statementToCode(block, 'DO');
+
+    var code = "module.hook(" + eventCode + ", function (event) {\n" + func + "});"
+
+    return code;
+  };
+
+  Blockly.JavaScript["event_list"] = function(block) {
+    var code = block.getFieldValue('EVENTNAME');
 
     return code;
   };
